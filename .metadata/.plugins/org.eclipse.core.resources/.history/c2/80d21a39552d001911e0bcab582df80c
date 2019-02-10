@@ -1,0 +1,31 @@
+
+public class MainClass {
+	
+	public static void main(String args[])
+	{
+		try{
+			Student student1 = new Student();
+			student1.name = args[0];
+			student1.mark1 = Integer.parseInt(args[1]);
+			student1.mark2 = Integer.parseInt(args[2]);
+			student1.mark3= Integer.parseInt(args[3]);
+			
+			
+			Student student2 = new Student();
+			student1.name = args[4];
+			student1.mark1 = Integer.parseInt(args[5]);
+			student1.mark2 = Integer.parseInt(args[6]);
+			student1.mark3 = Integer.parseInt(args[7]);
+		}
+		catch(NumberFormatException e)
+		{
+			System.out.println(e.getMessage());
+		}
+		
+		
+		
+		
+		
+	}
+
+}

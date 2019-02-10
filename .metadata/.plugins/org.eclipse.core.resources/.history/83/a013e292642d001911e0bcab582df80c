@@ -1,0 +1,10 @@
+package test;
+
+public class Foundation {
+	
+	private String var1;
+	String var2; 
+	 protected String var3;
+	public String  Var4;
+
+}

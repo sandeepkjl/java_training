@@ -1,0 +1,18 @@
+package other;
+
+import test.Foundation;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Foundation f =new Foundation();
+		
+		//only Var4 can be accessible
+		System.out.println(f.var4);
+		
+		System.out.println(f.Var4)
+		
+
+	}
+
+}

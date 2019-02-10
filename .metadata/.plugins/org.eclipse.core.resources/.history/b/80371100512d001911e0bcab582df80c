@@ -1,0 +1,51 @@
+import java.util.Date;
+
+public class CreditCardPayment extends Payment {
+	
+	private String cardHolderName;
+	private Date expiryDate;
+	private String cardNumber;
+	
+	
+	public CreditCardPayment() {
+		super();
+	}
+	public CreditCardPayment(double amount) {
+		super(amount);
+		
+	}
+	public CreditCardPayment(double amount, String cardHolderName, Date expiryDate, String cardNumber) {
+		super(amount);
+		this.cardHolderName = cardHolderName;
+		this.expiryDate = expiryDate;
+		this.cardNumber = cardNumber;
+	}
+	public String getCardHolderName() {
+		return cardHolderName;
+	}
+	public void setCardHolderName(String cardHolderName) {
+		this.cardHolderName = cardHolderName;
+	}
+	public Date getExpiryDate() {
+		return expiryDate;
+	}
+	public void setExpiryDate(Date expiryDate) {
+		this.expiryDate = expiryDate;
+	}
+	public String getCardNumber() {
+		return cardNumber;
+	}
+	public void setCardNumber(String cardNumber) {
+		this.cardNumber = cardNumber;
+	}
+	@Override
+	public String toString() {
+		return "CreditCardPayment [cardHolderName=" + cardHolderName + ", expiryDate=" + expiryDate + ", cardNumber="
+				+ cardNumber + ", Amount=" + getAmount() + "]";
+	}
+	
+	
+	
+	
+	
+}

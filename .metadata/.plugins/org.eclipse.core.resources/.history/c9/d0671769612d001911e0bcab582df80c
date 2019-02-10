@@ -1,0 +1,17 @@
+import java.util.HashMap;
+
+public class TelephoneBook {
+	
+	HashMap<String ,Long> hs= new HashMap<String, Long>();
+	
+	public boolean addNumber(String name, Long number)
+	{
+		boolean b = false;;
+		b= hs.put(name, number);
+		
+		return b;
+	}
+	
+	
+
+}

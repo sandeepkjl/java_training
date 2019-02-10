@@ -1,0 +1,14 @@
+
+public class MainClass {
+	
+	public static void main(String args[])
+	{
+		EmployeeDB empDB = new EmployeeDB();
+		empDB.addEmployee(new Employee(377367, "sandeep", "30000"));
+		
+		System.out.println(empDB.deleteEmployee(377367));
+		
+		empDB.addEmployee(new Employee(377368, "Rohan", "35000"));
+	}
+
+}
